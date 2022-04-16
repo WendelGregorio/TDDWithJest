@@ -9,12 +9,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js --ignore __test__"
+  },
   "dependencies": {
     "express": "^4.17.3",
     "pg": "^8.7.3",
     "sequelize": "^6.19.0"
   },
   "devDependencies": {
+    "nodemon": "^2.0.15",
     "sequelize-cli": "^6.4.1"
   }
 }
