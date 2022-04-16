@@ -1,6 +1,6 @@
 const express = require('express');
 
-class AppController{
+class AppController {
     constructor(){
         this.express = express()
         
@@ -9,11 +9,11 @@ class AppController{
     };
 
     middlewares(){
-        this.express.user(express.json());
+        this.express.use(express.json());
     }
 
     routes(){
-        this.express.use('./routes');
+        this.express.use(require('./routes'));
     }
 };
 
