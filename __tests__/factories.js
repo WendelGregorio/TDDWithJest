@@ -1,4 +1,4 @@
-const faker = require('faker');
+const { faker } = require('@faker-js/faker');
 const { factory } = require('factory-girl');
 const { User } = require('../src/app/models');
 
