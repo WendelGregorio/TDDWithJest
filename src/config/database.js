@@ -1,9 +1,9 @@
 module.exports = {
-    host: '127.0.0.1',
-    username: 'postgres',
-    password: 'postgres',
-    database: 'db_authtdd',
-    dialect: 'postgres',
+    host: process.env.DB_HOST,
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
+    dialect: process.env.DB_DIALECT || 'postgres',
     operatorsAlieses: false,
     logging: false,
     define: {
